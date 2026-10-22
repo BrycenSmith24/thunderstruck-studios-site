@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tsstudios.site/sitemap.xml

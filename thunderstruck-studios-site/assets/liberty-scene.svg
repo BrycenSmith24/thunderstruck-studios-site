@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="600" y1="0" x2="600" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#182d4b"/><stop offset=".38" stop-color="#182941"/><stop offset=".68" stop-color="#28394d"/><stop offset="1" stop-color="#0a1423"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(430 240 -300 540 800 360)" gradientUnits="userSpaceOnUse"><stop stop-color="#4a91d7" stop-opacity=".4"/><stop offset="1" stop-color="#4a91d7" stop-opacity="0"/></radialGradient>
+    <linearGradient id="road" x1="600" y1="560" x2="600" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#252f40"/><stop offset="1" stop-color="#080f19"/></linearGradient>
+    <linearGradient id="carBody" x1="280" y1="515" x2="880" y2="716" gradientUnits="userSpaceOnUse"><stop stop-color="#eef3f8"/><stop offset=".42" stop-color="#aebed0"/><stop offset=".7" stop-color="#e9eff5"/><stop offset="1" stop-color="#768ba3"/></linearGradient>
+    <linearGradient id="windows" x1="450" y1="490" x2="675" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#172a3f"/><stop offset="1" stop-color="#284963"/></linearGradient>
+    <linearGradient id="blueLight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#46b5ff"/><stop offset="1" stop-color="#1472ff"/></linearGradient>
+    <linearGradient id="redLight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff7d79"/><stop offset="1" stop-color="#f1253a"/></linearGradient>
+    <filter id="blur20" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <circle cx="880" cy="232" r="112" fill="#92bfe8" opacity=".06"/>
+  <circle cx="880" cy="232" r="76" stroke="#8cbce9" stroke-opacity=".12"/>
+  <circle cx="880" cy="232" r="108" stroke="#8cbce9" stroke-opacity=".08"/>
+  <!-- distant hillside -->
+  <path d="M0 425 100 382 177 400 255 350 338 394 418 365 505 413 602 354 680 396 758 343 858 388 938 354 1015 399 1104 360 1200 402V630H0z" fill="#132237"/>
+  <path d="M0 458 115 425 202 445 300 405 389 436 507 420 601 452 700 402 810 439 900 418 1007 451 1100 422 1200 440V643H0z" fill="#192b3f"/>
+  <!-- town silhouette -->
+  <g fill="#101c2c" stroke="#30465f" stroke-opacity=".34" stroke-width="2">
+    <path d="M0 508V453H65V478H93V429H131V509H160V464H195V509H220V440H258V511H287V468H328V514H350V435H388V514H417V474H459V522H482V452H518V526H541V467H576V523H605V437H647V515H676V471H715V524H741V444H780V513H810V458H851V516H877V477H912V523H943V448H985V518H1017V466H1059V519H1089V431H1125V516H1156V467H1200V640H0z"/>
+    <path d="M26 477h15v-10H26zm78-30h14v-10h-14zm119 12h16v-11h-16zm132-12h15v-11h-15zm144 24h15v-11h-15zm174-20h15v-10h-15zm151 15h15v-11h-15zm135-18h15v-11h-15zm114 9h15v-11h-15z" fill="#36506b" stroke="none" opacity=".65"/>
+  </g>
+  <!-- scattered lit windows -->
+  <g fill="#f7ba65" opacity=".62">
+    <path d="M102 445h5v8h-5zm19-8h5v7h-5zm117 15h5v7h-5zm15-11h5v8h-5zm117-1h5v7h-5zm23-1h5v7h-5zm127 32h5v8h-5zm21-13h5v7h-5zm175-32h5v8h-5zm25 15h5v8h-5zm130 18h5v7h-5zm20-13h5v7h-5zm142-14h5v7h-5zm35 24h5v8h-5z"/>
+  </g>
+  <!-- overpass and side streets -->
+  <path d="M-20 574 180 540 410 563 650 528 870 554 1220 513" stroke="#35475d" stroke-width="26"/>
+  <path d="M-20 571 180 537 410 560 650 525 870 551 1220 510" stroke="#71859a" stroke-opacity=".45" stroke-width="2"/>
+  <g stroke="#d2dde9" stroke-opacity=".28" stroke-width="3"><path d="m98 550 8 18m83-31 9 17m103-13 9 18m110-12 8 17m112-24 8 18m105-19 8 18m105-12 8 17m101-24 8 17"/></g>
+  <!-- road plane -->
+  <path d="M0 660 416 572 727 584 1200 680V900H0z" fill="url(#road)"/>
+  <path d="M0 660 416 572 727 584 1200 680" stroke="#586a7e" stroke-opacity=".6" stroke-width="3"/>
+  <path d="M-40 817 410 632 524 628 180 900H0z" fill="#344357" opacity=".25"/>
+  <path d="M1030 900 790 627 854 638 1165 900z" fill="#02070d" opacity=".42"/>
+  <path d="M625 625 598 720M585 757l-19 66M546 862l-10 38" stroke="#e0bd7b" stroke-opacity=".65" stroke-width="7" stroke-linecap="round"/>
+  <path d="M106 730 284 679" stroke="#d2d9e1" stroke-opacity=".22" stroke-width="4"/>
+  <!-- streetlights -->
+  <g>
+    <path d="M105 352v206" stroke="#172435" stroke-width="10"/><path d="M101 353q-3-22 27-19" stroke="#172435" stroke-width="9" stroke-linecap="round"/><circle cx="126" cy="334" r="6" fill="#ffd997"/><circle cx="126" cy="334" r="25" fill="#f2b75a" opacity=".35" filter="url(#blur20)"/>
+    <path d="M1087 314v238" stroke="#172435" stroke-width="10"/><path d="M1083 314q-3-22 27-19" stroke="#172435" stroke-width="9" stroke-linecap="round"/><circle cx="1110" cy="295" r="6" fill="#ffd997"/><circle cx="1110" cy="295" r="25" fill="#f2b75a" opacity=".3" filter="url(#blur20)"/>
+  </g>
+  <!-- trees at edges -->
+  <g fill="#0a1623"><path d="m20 483 39-102 40 102H76l25 42H19l28-42z"/><path d="m1094 478 45-116 42 116h-25l29 48h-87l28-48z"/><path d="m1158 534 28-73 29 73h-16l19 29h-59l20-29z"/></g>
+  <!-- vehicle glow -->
+  <ellipse cx="608" cy="720" rx="350" ry="54" fill="#02070e" opacity=".76" filter="url(#shadow)"/>
+  <ellipse cx="559" cy="663" rx="270" ry="28" fill="#4e9bf5" opacity=".17" filter="url(#blur20)"/>
+  <ellipse cx="680" cy="663" rx="270" ry="28" fill="#fd5264" opacity=".11" filter="url(#blur20)"/>
+  <!-- patrol sedan body -->
+  <g transform="translate(120 0)">
+    <path d="M208 644 231 594Q244 566 275 552L355 508Q375 497 414 495L576 493Q611 494 637 523L693 574 767 593Q788 601 799 622L807 652 787 678 244 690 201 670Z" fill="#020711" opacity=".68"/>
+    <path d="M231 624 253 580Q263 560 287 550L370 508Q387 500 419 500L573 500Q604 501 626 527L677 578 749 596Q771 601 782 620L790 646 765 668 247 674 218 656Z" fill="url(#carBody)" stroke="#647b95" stroke-width="3"/>
+    <!-- windshield and side windows -->
+    <path d="M286 551 373 512Q391 506 415 506L430 570 268 579Z" fill="url(#windows)" stroke="#6f8299" stroke-width="3"/>
+    <path d="M441 506 569 507Q594 508 611 529L650 573 450 570Z" fill="url(#windows)" stroke="#6f8299" stroke-width="3"/>
+    <path d="M435 507 445 570" stroke="#9cacc0" stroke-width="4"/>
+    <path d="M267 585 658 582" stroke="#eaf0f5" stroke-width="4" opacity=".55"/>
+    <!-- stripe and door -->
+    <path d="M242 607 677 608 730 625 752 642 251 650 225 640z" fill="#12243a"/>
+    <path d="M241 614 680 615 724 632 728 638 244 646 228 637z" fill="#f2f5f8"/>
+    <path d="M442 579 437 650M618 583 634 654" stroke="#637990" stroke-width="3"/>
+    <!-- shield mark -->
+    <path d="m499 597 24 6v16q-1 13-12 19-11-6-12-19z" fill="#d8e4f1" stroke="#172b43" stroke-width="2"/>
+    <path d="m504 612 5 5 9-10" stroke="#183554" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="544" y="636" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#1a3049">COUNTY</text>
+    <!-- hood and lights -->
+    <path d="M648 580 680 585 748 603 768 624 670 622Z" fill="#e4ebf3" stroke="#7d90a6" stroke-width="2"/>
+    <path d="M650 581 677 585 711 595" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>
+    <rect x="397" y="484" width="115" height="18" rx="4" fill="#111e2e" stroke="#8a9db3" stroke-width="2"/>
+    <rect x="402" y="486" width="48" height="13" rx="2" fill="url(#blueLight)"/><rect x="458" y="486" width="48" height="13" rx="2" fill="url(#redLight)"/>
+    <rect x="402" y="486" width="48" height="13" rx="2" fill="#54aaff" opacity=".65" filter="url(#blur20)"/><rect x="458" y="486" width="48" height="13" rx="2" fill="#ff4659" opacity=".55" filter="url(#blur20)"/>
+    <!-- lights and grille -->
+    <path d="M738 610 771 620 781 635 745 638Z" fill="#d9e8f7"/>
+    <path d="M744 619 769 627" stroke="#d8f2ff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M735 645 785 641 786 650 737 656Z" fill="#1b2b3d"/>
+    <path d="M745 647 745 652m11-6v6m11-7v6" stroke="#7890a8" stroke-width="2"/>
+    <path d="M223 630 211 639 219 653 240 655 249 638Z" fill="#f4f7fb"/>
+    <path d="M216 642 235 642" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M219 657 242 661" stroke="#ff626e" stroke-width="7" stroke-linecap="round"/>
+    <!-- wheels -->
+    <g><ellipse cx="315" cy="667" rx="48" ry="51" fill="#070d15"/><ellipse cx="315" cy="667" rx="30" ry="34" fill="#263444" stroke="#6c8198" stroke-width="4"/><ellipse cx="315" cy="667" rx="17" ry="19" fill="#8a9bad"/><circle cx="315" cy="667" r="6" fill="#dbe5ef"/><path d="M315 649v36m-16-18h32m-28-13 24 26m0-26-24 26" stroke="#3e536b" stroke-width="3"/></g>
+    <g><ellipse cx="680" cy="658" rx="48" ry="50" fill="#070d15"/><ellipse cx="680" cy="658" rx="30" ry="34" fill="#263444" stroke="#6c8198" stroke-width="4"/><ellipse cx="680" cy="658" rx="17" ry="19" fill="#8a9bad"/><circle cx="680" cy="658" r="6" fill="#dbe5ef"/><path d="M680 640v36m-16-18h32m-28-13 24 26m0-26-24 26" stroke="#3e536b" stroke-width="3"/></g>
+    <!-- side mirror and handles -->
+    <path d="M265 571 246 565 239 577 258 584Z" fill="#b3c1cf" stroke="#5b738d" stroke-width="2"/><rect x="466" y="591" width="22" height="4" rx="2" fill="#536981"/><rect x="577" y="592" width="22" height="4" rx="2" fill="#536981"/>
+  </g>
+  <!-- light bounce on asphalt -->
+  <path d="M505 702 460 803 420 900H280l120-152z" fill="#2b83ee" opacity=".095"/>
+  <path d="M740 694 820 790 930 900H790l-94-154z" fill="#f33e58" opacity=".075"/>
+  <g fill="#b3d8ff" opacity=".35"><circle cx="114" cy="612" r="2"/><circle cx="183" cy="591" r="1.5"/><circle cx="972" cy="580" r="2"/><circle cx="1021" cy="612" r="1.5"/><circle cx="906" cy="478" r="1.3"/><circle cx="344" cy="452" r="1.2"/></g>
+  <rect width="1200" height="900" fill="url(#sky)" opacity=".06"/>
+</svg>
